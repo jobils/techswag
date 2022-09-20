@@ -13,10 +13,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.techswag.R
 
-class CategoryAdapter(context: Context, categories: List<Category>): BaseAdapter (){
-
-    val context =  context
-    val categories = categories
+class CategoryAdapter(val context: Context, val categories: List<Category>): BaseAdapter (){
 
     override fun getCount(): Int {
         return categories.count()
